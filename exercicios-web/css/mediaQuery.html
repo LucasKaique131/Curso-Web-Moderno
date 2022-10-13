@@ -12,7 +12,22 @@
             border: solid 5px;
             display: none;
         }
+
+        @media (max-width: 600px) {
+            .muito-pequeno { display: block;}
+        }
+
+        @media (max-width: 1000px), (orientatio: portrait) {
+            .pequeno-retrato { display: block;}
+        }
+
+        @media (min-width: 700px) and (max-width: 1000px) {
+            .intervalo {display: block;}
+        }
+
     </style>
+
+    
 </head>
 <body>
     <div class="muito-pequeno">Muito Pequeno</div>
